@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Math Game</title>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div id="intro">
+            <h1>Welcome To The Math Game</h1>
+            <p>In here you can test your math solving problem speed with answering simple math Questions</p>
+            <p><b>Note: </b> Your Device will generate questions</p>
+
+            <div class="configs">
+                <div class="select">
+                    <p>Level:</p>
+                    <select id="level">
+                        <option value="1">Easy</option>
+                        <option value="2">Normal</option>
+                        <option value="3">Hard</option>
+                    </select>
+                </div>
+
+                <div class="select">
+                    <p>Operation</p>
+                    <select id="operation">
+                        <option value="+">Add</option>
+                        <option value="-">Subtract</option>
+                        <option value="*">Multiply</option>
+                        <option value="/">Divide</option>
+                    </select>
+                </div>
+
+                <div class="select">
+                    <p>
+                        Question No.
+                    </p>
+                    <input id="problemsCountInput" value="20" type="number" min="3" max="1000">
+                </div>
+            </div>
+
+
+            <button onclick="startGame()" class="start">Start</button>
+            <button onclick="showRecords()" class="start">Records</button>
+
+        </div>
+        <div id="game">
+            <div></div>
+            <span></span>
+            <p></p>
+            <button id="btn-a" data-option="a">A: 300</button>
+            <button id="btn-b" data-option="b">B: 100</button>
+            <button id="btn-c" data-option="c">C: 510</button>
+            <button id="btn-d" data-option="d">D: 210</button>
+        </div>
+        <div id="result">
+            <p></p>
+            <table class="table">
+            </table>
+            <button onclick="restartGame()">Play Again</button>
+            <button onclick="clearStorage()">Clear Records</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+label {
+    padding: 5px;
+}
+
+.start {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#intro,
+#game,
+#result {
+    margin-top: 20vh;
+}
+
+#game,
+#result {
+    width: 100%;
+    text-align: center;
+    display: none;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+#game p {
+    font-size: 30px;
+    padding: 10px;
+}
+
+#game button,
+#intro button {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 49%;
+    margin: 5px auto;
+}
+
+.configs {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.select {
+    flex: 1;
+}
+
+.select p {
+    margin: 3px 0;
+    padding: 0;
+}
+
+.select select,
+.select input {
+    padding: 10px 10px;
+    width: 100%;
+}
+
+#result {
+    overflow-x: scroll;
+}
+
+#result button {
+    margin-top: 15px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table *,
+.table {
+    border: 1px solid gray;
+    padding: 5px;
+    min-width: 70px;
+}
